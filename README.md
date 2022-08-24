@@ -1,5 +1,13 @@
 # Digital Audio Workstation (DAW)
 
+## What is this project?
+
+A graphical user interface (GUI) for an offline (i.e., not real-time) 
+signal processing user interface. The user will be able to apply an effect, examine the
+result after the processing is finished, decide if results are acceptable or need changes before
+saving to an output audio file.
+
+
 ![image](https://user-images.githubusercontent.com/73859429/186344505-053d4501-46f0-4160-ad5a-c8f6296bb79d.png)
 
 ## Code Working Functions:
