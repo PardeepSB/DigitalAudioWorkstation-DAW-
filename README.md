@@ -44,10 +44,10 @@ saving to an output audio file.
 
 ## Code Limitations:
 
-* Some of the effects are limited by their slider, limitations are set by us (range of slider values)
+* Some of the effects are limited by their slider, limitations are static (range of slider values in specified range)
 
-* Need the signal to have one column with all the data for us to apply the audio effects (size error if input is a 2D matrix/array)
-  (some files contain layered audio, 2+ rows in input signal, we convert to 1 column signal before applying any effects)
+* Need the signal to have one column with all the data to apply the audio effects (size error if input is a 2D matrix/array)
+  (some files contain stereo audio, 2+ rows in input signal. They're converted to 1 column signal before applying any effects)
   
 * Need to apply the effects in a certain order in order for the code to work (need to maintain a certain number of columns to apply certain effects)
 
@@ -61,7 +61,7 @@ saving to an output audio file.
 
 * The amplitude of the echo effect is set as a constant value
 
-* Reverb has only 1 impulse response, pre-determined by us (hard coded)
+* Reverb has only 1 impulse response, pre-determined (hard coded)
 
 
 ## Suggested Future Work:
@@ -71,6 +71,8 @@ saving to an output audio file.
 	  (made a matrix to save all changes one by one and revert by calling previously saved column(s) of audio)
 	  
 * Add an undo button to go back to the last saved setting/effects (when save button is clicked, all effect settings are saved until new audio file is saved)
+
+* Allow for Stero Audio Inputs to be modified by the Digital Audio Workstation
 
 * Be able to possibly identify effects applied to an uploaded audio signal 
 
